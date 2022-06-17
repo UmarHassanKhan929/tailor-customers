@@ -3,6 +3,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const connectDatabase = require('./config/database');
 const errorMiddleware = require('./middleware/error');
+const cors = require('cors')
 
 //expresss initialize
 const app = express();
@@ -15,7 +16,7 @@ connectDatabase();
 
 //for json parsing
 app.use(express.json());
-
+app.use(cors())
 //importing routes
 const customerRoutes = require('./routes/customerRoute')
 const orderRoutes = require('./routes/orderRoute')

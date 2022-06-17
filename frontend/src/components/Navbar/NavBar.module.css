@@ -1,0 +1,14 @@
+.link{
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    color: dimgray;
+}
+
+.link:hover{
+    color: rgb(218, 136, 136);
+}
+
+.link:active{
+    color: rgb(46, 46, 46);
+}

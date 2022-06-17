@@ -1,0 +1,12 @@
+.main{
+    background-color: rgb(253, 239, 239);
+    height: 94vh;
+    color: rgb(75, 69, 69);
+    padding: 20px;
+}
+
+.bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}

@@ -1,0 +1,43 @@
+.banner{
+    border-radius: 2px;
+    padding: 10px;
+    background-color: rgb(255, 228, 228);
+    height: 15rem;
+    color: rgb(75, 69, 69);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.content{
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.emph{
+    font-weight: 800;
+}
+.secondbanner{
+    padding: 10px;
+    background-color: rgb(253, 239, 239);
+    height: 35rem;
+    color: rgb(75, 69, 69);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.info{
+    padding: 20px;
+    font-weight: 600;
+}
+
+.usage{
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.secondbannercontent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
