@@ -73,7 +73,7 @@ const OrderModal = ({ ...props }) => {
                             <Form.Label>Customer</Form.Label>
                             <Form.Select
                                 aria-label="Select Customer"
-                                value={props.customer}
+                                value={props.customer._id}
                                 onChange={(e) =>
                                     setters
                                         ? props.setCustomer(e.target.value)

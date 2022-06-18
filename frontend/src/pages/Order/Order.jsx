@@ -118,7 +118,7 @@ const Order = () => {
                         </thead>
 
                         <tbody>
-                                {now && orders.filter(order => order.customer.name.toLowerCase().includes(query)).map(order=>{
+                                {now && orders.length>0 &&orders.filter(order => order.customer.name.toLowerCase().includes(query)).map(order=>{
                                     return <tr key={order._id}>
                                         <td>{order.customer.name}</td>
                                         <td>{order.customer.phone}</td>
