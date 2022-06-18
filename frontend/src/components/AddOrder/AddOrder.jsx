@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { useState } from "react";
-import OrderModal from '../OrderModal';
+import OrderModal from './OrderModal';
 
 const AddOrder = ({customers}) => {
 

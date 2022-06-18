@@ -75,11 +75,7 @@ const UpdateOrder = ({ order }) => {
                                 type="text"
                                 placeholder="OrderID"
                                 value={order._id}
-                                // onChange={(e) =>
-                                //     setters
-                                //         ? setName(e.target.value)
-                                //         : console.log(e.type)
-                                // }
+                                readOnly
                             />
                         </Form.Group>
 <br />
@@ -94,11 +90,7 @@ const UpdateOrder = ({ order }) => {
                                     type="text"
                                     placeholder="Hips"
                                     value={order.createdAt.split("T")[0]}
-                                    // onChange={(e) =>
-                                    //     setters
-                                    //         ? props.setHips(e.target.value)
-                                    //         : console.log(e)
-                                    // }
+                                    readOnly
                                 />
                             </Form.Group>
 
@@ -112,11 +104,7 @@ const UpdateOrder = ({ order }) => {
                                     type="text"
                                     placeholder="Shoulders"
                                     value={order.collectAt.split("T")[0]}
-                                    // onChange={(e) =>
-                                    //     setters
-                                    //         ? props.setShoulders(e.target.value)
-                                    //         : console.log(e)
-                                    // }
+                                    readOnly
                                 />
                             </Form.Group>
                         </Row>
@@ -128,11 +116,7 @@ const UpdateOrder = ({ order }) => {
                                 type="text"
                                 placeholder="name"
                                 value={order.customer.name}
-                                // onChange={(e) =>
-                                //     setters
-                                //         ? setName(e.target.value)
-                                //         : console.log(e.type)
-                                // }
+                                readOnly
                             />
                         </Form.Group>
 
@@ -142,11 +126,7 @@ const UpdateOrder = ({ order }) => {
                                 type="text"
                                 placeholder="Cloth"
                                 value={order.orderDetail.cloth}
-                                // onChange={(e) =>
-                                //     setters
-                                //         ? setStatus(e.target.value)
-                                //         : console.log(e)
-                                // }
+                                readOnly
                             />
                         </Form.Group>
 
@@ -156,11 +136,7 @@ const UpdateOrder = ({ order }) => {
                                 type="text"
                                 placeholder="Color"
                                 value={order.orderDetail.color}
-                                // onChange={(e) =>
-                                //     setters
-                                //         ? setStatus(e.target.value)
-                                //         : console.log(e)
-                                // }
+                                readOnly
                             />
                         </Form.Group>
 
@@ -183,13 +159,6 @@ const UpdateOrder = ({ order }) => {
                                 Update Order
                         </Button>
 
-                        {/* {worktype === "View" ? (
-                            ""
-                        ) : (
-                            <Button variant="flat" type="submit" block>
-                                {worktype} Customer
-                            </Button>
-                        )} */}
                     </Form>
                 </Modal.Body>
             </Modal>

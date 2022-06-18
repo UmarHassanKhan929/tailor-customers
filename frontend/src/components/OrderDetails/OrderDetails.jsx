@@ -1,8 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Modal, Button, Form } from "react-bootstrap";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
+import { Modal, Button } from "react-bootstrap";
+
 
 const OrderDetails = ({ order }) => {
     const [show, setShow] = useState(false);

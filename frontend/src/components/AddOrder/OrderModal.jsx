@@ -1,15 +1,10 @@
 import React from "react";
-import { FaUser } from "react-icons/fa";
 import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
 
 import { Modal, Button, Form } from "react-bootstrap";
 
 const OrderModal = ({ ...props }) => {
-    var setters = false;
-    if (props.worktype !== "View") {
-        setters = true;
-    }
+
     return (
         <>
             <style type="text/css">
@@ -48,9 +43,9 @@ const OrderModal = ({ ...props }) => {
                                 placeholder="Enter Cloth type"
                                 value={props.cloth}
                                 onChange={(e) =>
-                                    setters
-                                        ? props.setCloth(e.target.value)
-                                        : console.log(e.type)
+
+                                         props.setCloth(e.target.value)
+
                                 }
                             />
                         </Form.Group>
@@ -62,9 +57,9 @@ const OrderModal = ({ ...props }) => {
                                 placeholder="Color"
                                 value={props.color}
                                 onChange={(e) =>
-                                    setters
-                                        ? props.setColor(e.target.value)
-                                        : console.log(e)
+
+                                        props.setColor(e.target.value)
+
                                 }
                             />
                         </Form.Group>
@@ -75,9 +70,9 @@ const OrderModal = ({ ...props }) => {
                                 aria-label="Select Customer"
                                 value={props.customer._id}
                                 onChange={(e) =>
-                                    setters
-                                        ? props.setCustomer(e.target.value)
-                                        : console.log(e)
+
+                                         props.setCustomer(e.target.value)
+
                                 }
                             >
                                 <option>Select Customer</option>
@@ -87,15 +82,11 @@ const OrderModal = ({ ...props }) => {
                             </Form.Select>
                         </Form.Group>
 
-                        <br></br>
-
-                        {props.worktype === "View" ? (
-                            ""
-                        ) : (
+                        <br></br> 
                             <Button variant="flat" type="submit" block>
                                 {props.worktype} Order
                             </Button>
-                        )}
+
                     </Form>
                 </Modal.Body>
             </Modal>

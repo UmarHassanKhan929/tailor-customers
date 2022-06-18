@@ -3,8 +3,6 @@ import NavBar from "../../components/Navbar/NavBar";
 import styles from "./Order.module.css";
 import Table from "react-bootstrap/Table";
 import { useState, useEffect } from "react";
-
-import AddCustomer from "../../components/AddCustomer/AddCustomer";
 import SearchBar from "../../components/SearchBar";
 import AddOrder from "../../components/AddOrder/AddOrder";
 import { Button } from "react-bootstrap";

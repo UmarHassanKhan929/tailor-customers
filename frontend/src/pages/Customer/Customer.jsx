@@ -4,7 +4,6 @@ import styles from "./Customer.module.css";
 import Table from "react-bootstrap/Table";
 import CustomerRow from "../../components/AllCustomers/CustomerRow";
 import { useState, useEffect } from "react";
-import { Button } from "react-bootstrap";
 import AddCustomer from "../../components/AddCustomer/AddCustomer";
 import SearchBar from "../../components/SearchBar";
 

@@ -1,8 +1,8 @@
 import React from "react";
-import Table from "react-bootstrap/Table";
 import CustomerDetail from "../ViewCustomer/CustomerDetail";
 import CustomerUpdate from "../UpdateCustomer/CustomerUpdate";
 import CustomerDelete from "../DeleteCustomer/CustomerDelete";
+
 const CustomerRow = ({ customer, handleTableData}) => {
     return (
         <tr>

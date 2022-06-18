@@ -4,8 +4,6 @@ import { useState } from "react";
 
 import CustomerModal from "../CustomerModal";
 
-const URL = require("../../url");
-
 const AddCustomer = ({handleTableData}) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaUser } from "react-icons/fa";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 
@@ -10,6 +9,7 @@ const CustomerModal = ({ ...props }) => {
     if (props.worktype !== "View") {
         setters = true;
     }
+
     return (
         <>
             <style type="text/css">
