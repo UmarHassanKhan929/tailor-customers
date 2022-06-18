@@ -1,4 +1,4 @@
-Rest API endpoints can be dound here
+Rest API endpoints can be found here
 
 https://documenter.getpostman.com/view/17325384/UzBjtU4b
 
