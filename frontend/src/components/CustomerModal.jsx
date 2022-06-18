@@ -5,16 +5,32 @@ import Row from "react-bootstrap/Row";
 
 import { Modal, Button, Form } from "react-bootstrap";
 
-const CustomerModal = ({...props}) => {
+const CustomerModal = ({ ...props }) => {
     var setters = false;
-    if (props.worktype!=='View'){
+    if (props.worktype !== "View") {
         setters = true;
     }
     return (
-        
         <>
-            <div >
-                <Button variant="primary" onClick={props.handleShow} >
+            <style type="text/css">
+                {`
+                    .btn-flat {
+                    background-color: pink;
+                    color: black;
+                    }
+                    .btn-flat:hover {
+                        background-color: pink;
+                        color: white;
+                    }
+
+                    .btn-xxl {
+                    padding: 1rem 1.5rem;
+                    font-size: 1.5rem;
+                    }
+                `}
+            </style>
+            <div>
+                <Button variant="flat" onClick={props.handleShow}>
                     {props.worktype} Customer
                 </Button>
             </div>
@@ -31,7 +47,11 @@ const CustomerModal = ({...props}) => {
                                 type="text"
                                 placeholder="Enter name"
                                 value={props.name}
-                                onChange={(e) => setters?props.setName(e.target.value):console.log(e.type)}
+                                onChange={(e) =>
+                                    setters
+                                        ? props.setName(e.target.value)
+                                        : console.log(e.type)
+                                }
                             />
                         </Form.Group>
 
@@ -41,7 +61,11 @@ const CustomerModal = ({...props}) => {
                                 type="email"
                                 placeholder="Email"
                                 value={props.email}
-                                onChange={(e) => setters?props.setEmail(e.target.value):console.log(e)}
+                                onChange={(e) =>
+                                    setters
+                                        ? props.setEmail(e.target.value)
+                                        : console.log(e)
+                                }
                             />
                         </Form.Group>
 
@@ -56,7 +80,11 @@ const CustomerModal = ({...props}) => {
                                     type="phone"
                                     placeholder="Phone"
                                     value={props.phone}
-                                    onChange={(e) => setters?props.setPhone(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setPhone(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
                             <Form.Group
@@ -69,7 +97,11 @@ const CustomerModal = ({...props}) => {
                                     type="number"
                                     placeholder="Age"
                                     value={props.age}
-                                    onChange={(e) => setters?props.setAge(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setAge(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
                         </Row>
@@ -87,7 +119,11 @@ const CustomerModal = ({...props}) => {
                                     placeholder="Kurta length"
                                     value={props.kurtalength}
                                     onChange={(e) =>
-                                        setters?props.setKurtalength(e.target.value):console.log(e)
+                                        setters
+                                            ? props.setKurtalength(
+                                                  e.target.value
+                                              )
+                                            : console.log(e)
                                     }
                                 />
                             </Form.Group>
@@ -102,7 +138,11 @@ const CustomerModal = ({...props}) => {
                                     type="number"
                                     placeholder="Chest"
                                     value={props.chest}
-                                    onChange={(e) => setters?props.setChest(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setChest(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
 
@@ -116,7 +156,11 @@ const CustomerModal = ({...props}) => {
                                     type="number"
                                     placeholder="Waist"
                                     value={props.waist}
-                                    onChange={(e) => setters?props.setWaist(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setWaist(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
                         </Row>
@@ -132,7 +176,11 @@ const CustomerModal = ({...props}) => {
                                     type="number"
                                     placeholder="Hips"
                                     value={props.hips}
-                                    onChange={(e) => setters?props.setHips(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setHips(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
 
@@ -147,7 +195,9 @@ const CustomerModal = ({...props}) => {
                                     placeholder="Shoulders"
                                     value={props.shoulders}
                                     onChange={(e) =>
-                                        setters?props.setShoulders(e.target.value):console.log(e)
+                                        setters
+                                            ? props.setShoulders(e.target.value)
+                                            : console.log(e)
                                     }
                                 />
                             </Form.Group>
@@ -162,7 +212,11 @@ const CustomerModal = ({...props}) => {
                                     type="number"
                                     placeholder="Sleeves"
                                     value={props.sleeves}
-                                    onChange={(e) => setters?props.setSleeves(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setSleeves(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
                         </Row>
@@ -178,7 +232,11 @@ const CustomerModal = ({...props}) => {
                                     type="number"
                                     placeholder="Collar"
                                     value={props.collar}
-                                    onChange={(e) => setters?props.setCollar(e.target.value):console.log(e)}
+                                    onChange={(e) =>
+                                        setters
+                                            ? props.setCollar(e.target.value)
+                                            : console.log(e)
+                                    }
                                 />
                             </Form.Group>
 
@@ -193,7 +251,11 @@ const CustomerModal = ({...props}) => {
                                     placeholder="Shalwar"
                                     value={props.shalwarlength}
                                     onChange={(e) =>
-                                        setters?props.setShalwarlength(e.target.value):console.log(e)
+                                        setters
+                                            ? props.setShalwarlength(
+                                                  e.target.value
+                                              )
+                                            : console.log(e)
                                     }
                                 />
                             </Form.Group>
@@ -201,10 +263,13 @@ const CustomerModal = ({...props}) => {
 
                         <br></br>
 
-                        {props.worktype==="View"?"":<Button variant="primary" type="submit" block>
-                            {props.worktype} Customer
-                        </Button>}
-                        
+                        {props.worktype === "View" ? (
+                            ""
+                        ) : (
+                            <Button variant="flat" type="submit" block>
+                                {props.worktype} Customer
+                            </Button>
+                        )}
                     </Form>
                 </Modal.Body>
             </Modal>

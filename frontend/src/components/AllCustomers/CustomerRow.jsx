@@ -3,7 +3,7 @@ import Table from "react-bootstrap/Table";
 import CustomerDetail from "../ViewCustomer/CustomerDetail";
 import CustomerUpdate from "../UpdateCustomer/CustomerUpdate";
 import CustomerDelete from "../DeleteCustomer/CustomerDelete";
-const CustomerRow = ({ customer }) => {
+const CustomerRow = ({ customer, handleTableData}) => {
     return (
         <tr>
             <td>{customer.name}</td>
@@ -11,8 +11,8 @@ const CustomerRow = ({ customer }) => {
             <td>{customer.phone}</td>
             <td>{customer.email}</td>
             <td><CustomerDetail data={customer}/></td>
-            <td><CustomerUpdate data={customer}/></td>
-            <td><CustomerDelete data={customer._id}/></td>
+            <td><CustomerUpdate data={customer} handleTableData={handleTableData} /></td>
+            <td><CustomerDelete data={customer._id} handleTableData={handleTableData}/></td>
         </tr>
     );
 };

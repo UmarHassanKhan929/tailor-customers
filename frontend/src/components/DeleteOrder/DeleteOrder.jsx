@@ -1,21 +1,20 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-const CustomerDelete = ({data,handleTableData}) => {
+const DeleteOrder = ({data,handleTableData}) => {
 
     const HandleDelete = (e) => {
         e.preventDefault();
 
-        fetch(`http://localhost:5000/api/customer/${data}`, {
+        fetch(`http://localhost:5000/api/order/${data}`, {
             method: "DELETE",
             headers: { "Content-Type": "application/json" },
         })
             .then((res) => {
-                console.log("Customer Yeeted");
+                console.log("Order Yeeted");
                 return res.json()
             })
             .then((data) => {
                 console.log(data)
-                handleTableData();
             })
             .catch((err) => {
                 console.log(err);
@@ -31,4 +30,4 @@ const CustomerDelete = ({data,handleTableData}) => {
     );
 };
 
-export default CustomerDelete;
+export default DeleteOrder;

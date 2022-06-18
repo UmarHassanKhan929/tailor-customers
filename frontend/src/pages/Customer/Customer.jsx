@@ -10,7 +10,6 @@ import SearchBar from "../../components/SearchBar";
 
 const Customer = () => {
     const [customers, setCustomers] = useState([]);
-    const [filtered,setFiltered] = useState([]);
     const [query,setQuery] = useState("")
 
     function fetchData() {
@@ -45,7 +44,7 @@ const Customer = () => {
                         <h1>Customers</h1>
                         <div className={styles.bar}>
                             <SearchBar setQuery={setQuery}/>
-                            <AddCustomer />
+                            <AddCustomer  handleTableData={fetchData}/>
                         </div>
                     </div>
                     <Table bordered hover>
@@ -55,7 +54,7 @@ const Customer = () => {
                                 <th>Age</th>
                                 <th>Phone</th>
                                 <th>Email</th>
-                                <th>Details</th>
+                                <th >Details</th>
                                 <th>Update</th>
                                 <th>Delete</th>
                             </tr>
@@ -66,6 +65,7 @@ const Customer = () => {
                                     <CustomerRow
                                         customer={customer}
                                         key={customer._id}
+                                        handleTableData={fetchData}
                                     />
                                 );
                             })}

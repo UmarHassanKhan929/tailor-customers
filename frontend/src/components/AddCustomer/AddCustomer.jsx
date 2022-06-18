@@ -6,7 +6,7 @@ import CustomerModal from "../CustomerModal";
 
 const URL = require("../../url");
 
-const AddCustomer = () => {
+const AddCustomer = ({handleTableData}) => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
@@ -71,6 +71,8 @@ const AddCustomer = () => {
         setAge();
 
         handleClose();
+
+        handleTableData();
     };
 
     return (

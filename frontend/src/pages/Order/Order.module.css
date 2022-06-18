@@ -4,3 +4,26 @@
     color: rgb(75, 69, 69);
     padding: 20px;
 }
+
+.filterbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.searchb{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 10px;
+    width: 100%;
+}
+
+.optionsfilter{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 100%;
+}
