@@ -1,6 +1,6 @@
 # tailor-customers
 An web portal for for tailors to maintain their customers sizes for sewing clothes
-Live Demo ![here](https://tailors-cave.herokuapp.com)
+Live Demo [here](https://tailors-cave.herokuapp.com)
 
 Currently  limited to only shalwar qameez measurements for men
 
